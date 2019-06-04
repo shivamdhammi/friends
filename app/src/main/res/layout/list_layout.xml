@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/relative">
+
+    <TextView
+        android:id="@+id/ID"
+        android:layout_width="36dp"
+        android:layout_height="43dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="3dp"
+        android:text="1"
+        android:textSize="20dp" />
+
+    <LinearLayout
+        android:layout_width="212dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="41dp"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/listName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:text="Shivam Dhammi"
+            android:textColor="#000"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/ListContact"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight=".5"
+            android:padding="0dp"
+            android:text="9996991814"
+            android:textColor="#808080"
+            android:textSize="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="254dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/Edit_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:background="@drawable/buton_design"
+            android:text="Edit"
+            android:textColor="#0009ff"
+            android:layout_marginHorizontal="2dp"
+            android:textSize="10dp" />
+
+        <Button
+            android:id="@+id/Delete_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="2dp"
+            android:layout_weight=".5"
+            android:background="@drawable/delete_button"
+            android:text="Delete"
+            android:textColor="#a30500"
+            android:textSize="10dp" />
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
